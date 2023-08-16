@@ -225,13 +225,38 @@ body {
     line-height: normal;
     letter-spacing: 0.125rem;
     text-transform: uppercase;
-    margin-top: 1.5rem;
     width: 100%;
 }
 
 .action-btn:hover {
     background-color: var(--white);
     color: var(--orange);
+}
+
+.btn-container {
+    margin-top: 1.5rem;
+}
+.inactive-btn {
+    padding: 11px;
+    border-radius: 22.5px;
+    border: none;
+    background-color: var(--very-dark-blue);
+    color: var(--light-grey);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Heading (Medium) */
+    font-family: Overpass;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.inactive-btn:hover {
+    background-color: var(--dark-blue);
+    color: var(--very-dark-blue);
 }
 
 /*rated part */
@@ -276,4 +301,31 @@ body {
 
 .hidden {
     display: none;
+}
+
+#rating {
+    color: var(--orange);
+    background: none;
+}
+
+span {
+    background: none;
+}
+
+.error {
+    display: none;
+    gap: 0.25rem;
+    align-items: center;
+    color: red;
+    font-size: 12px;
+    padding: 0.25rem 0.5rem;
+    background-color: rgba(255, 0, 0, .25);
+    width: fit-content;
+    margin: 0 auto 10px auto;
+    border-radius: 10px;
+}
+
+.error img { 
+    height: 0.7rem;
+    width: auto;
 }
